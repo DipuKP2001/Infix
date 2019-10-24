@@ -133,16 +133,9 @@ int main(){
         }
         else if(ch==2){
             char post[size];
-            printf("Press 1 if you want to give another postfix expression,otherwise press any other\n");
-            char ch=getchar();
-            if(ch==1){
-                printf("Enter a postfix expression:\n");
-                scanf("%s",post);
-                eval(post);
-            }
-            else{
-                eval(postfix);
-            }
+            printf("Enter the postfix expression:\n");
+            scanf("%s",post);
+            eval(post);
         }
         else{
             return 0;
